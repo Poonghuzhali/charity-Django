@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="impMeal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#impMeal)"/>
+  <ellipse cx="200" cy="265" rx="130" ry="20" fill="rgba(0,0,0,0.06)"/>
+  <ellipse cx="200" cy="205" rx="110" ry="28" fill="#d97706"/>
+  <ellipse cx="200" cy="200" rx="100" ry="22" fill="#f59e0b"/>
+  <!-- family -->
+  <circle cx="130" cy="135" r="30" fill="#d4a574"/>
+  <path d="M108 126 Q130 104 152 126" fill="#3d2314"/>
+  <rect x="112" y="165" width="36" height="48" rx="8" fill="#16a34a"/>
+  <circle cx="200" cy="145" r="24" fill="#fcd9b6"/>
+  <rect x="188" y="169" width="24" height="32" rx="6" fill="#f59e0b"/>
+  <circle cx="270" cy="135" r="30" fill="#e8b89a"/>
+  <rect x="252" y="165" width="36" height="48" rx="8" fill="#7c3aed"/>
+  <!-- bowls -->
+  <ellipse cx="165" cy="192" rx="22" ry="9" fill="#fff"/>
+  <ellipse cx="235" cy="192" rx="22" ry="9" fill="#fff"/>
+  <circle cx="165" cy="186" r="14" fill="#fbbf24"/>
+  <circle cx="235" cy="186" r="14" fill="#f97316"/>
+  <ellipse cx="200" cy="195" rx="18" ry="8" fill="#fff"/>
+  <circle cx="200" cy="190" r="10" fill="#84cc16"/>
+</svg>

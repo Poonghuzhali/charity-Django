@@ -1,0 +1,40 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Our Causes | HopeHands Foundation{% endblock %}
+
+{% block footer_nav %}
+<a href="{% url 'about' %}">About Us</a>
+<a href="{% url 'contact' %}">Contact</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+{% endblock %}
+
+{% block content %}
+<section class="causes-page page-top">
+    <div class="container">
+        <header class="causes-page__header">
+            <h1 class="causes-page__title">Our Causes</h1>
+            <p class="causes-page__intro">
+                Explore the various initiatives and projects we are dedicated to supporting.
+                Your contribution can make a significant difference in the lives of those in need.
+            </p>
+        </header>
+
+        <div class="causes-page__list">
+            {% for cause in causes %}
+            <article class="cause-detail-card" id="{{ cause.slug }}">
+                <div class="cause-detail-card__image-wrap">
+                    <img src="{% static cause.image %}" alt="{{ cause.title }}" class="cause-detail-card__image img-animated img-animated--card">
+                </div>
+                <div class="cause-detail-card__body">
+                    <h2 class="cause-detail-card__title">{{ cause.title }}</h2>
+                    <p class="cause-detail-card__text">{{ cause.description }}</p>
+                    <a href="{% url 'donate' %}?cause={{ cause.slug }}" class="btn btn--primary cause-detail-card__btn">Donate for this cause</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

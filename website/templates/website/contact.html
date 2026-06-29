@@ -1,0 +1,94 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us | HopeHands Foundation{% endblock %}
+
+{% block footer_nav %}
+<a href="{% url 'about' %}">About Us</a>
+<a href="{% url 'causes' %}">Our Programs</a>
+<a href="{% url 'volunteer' %}">Volunteer</a>
+<a href="{% url 'donate' %}">Donate</a>
+<a href="{% url 'contact' %}">Contact</a>
+{% endblock %}
+
+{% block content %}
+<section class="contact-page page-top">
+    <div class="container">
+        <h1 class="contact-page__title">Get in Touch With Us</h1>
+
+        <div class="contact-cards">
+            {% for item in contact_info %}
+            <article class="contact-card">
+                <div class="contact-card__icon" aria-hidden="true">
+                    {% if item.type == 'email' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    {% elif item.type == 'phone' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    {% else %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    {% endif %}
+                </div>
+                {% if item.href %}
+                <a href="{{ item.href }}" class="contact-card__text">{{ item.value }}</a>
+                {% else %}
+                <span class="contact-card__text">{{ item.value }}</span>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="contact-map">
+        <iframe
+            class="contact-map__iframe"
+            title="HopeHands Foundation location in Chennai, India"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=80.2200%2C13.0100%2C80.3200%2C13.1200&amp;layer=mapnik&amp;marker=13.0827%2C80.2707"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="container">
+        <section class="support-trust">
+            <h2 class="support-trust__title">Support &amp; Trust</h2>
+            <p class="support-trust__text">
+                We believe in transparency, trust, and people-powered change. Every volunteer
+                helps us move closer to a better future.
+            </p>
+            <div class="trust-badges">
+                {% for badge in trust_badges %}
+                <article class="trust-badge trust-badge--{{ badge.color }}">
+                    <div class="trust-badge__icon" aria-hidden="true">
+                        {% if badge.icon == 'shield' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                        {% elif badge.icon == 'community' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                        {% else %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                        </svg>
+                        {% endif %}
+                    </div>
+                    <span class="trust-badge__label">{{ badge.label }}</span>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</section>
+{% endblock %}

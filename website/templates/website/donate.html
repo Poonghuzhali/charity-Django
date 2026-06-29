@@ -1,0 +1,83 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Donate | HopeHands Foundation{% endblock %}
+
+{% block footer_nav %}
+<a href="{% url 'about' %}">About Us</a>
+<a href="{% url 'contact' %}">Contact</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+{% endblock %}
+
+{% block content %}
+<section class="donate-page page-top">
+    <div class="container donate-page__container">
+        <header class="donate-page__header">
+            <h1 class="donate-page__title">Make a Difference Today</h1>
+            <p class="donate-page__intro">
+                Your generous donation will help us continue our mission to support communities in need.
+                Choose an amount below or enter a custom amount to make a secure donation.
+            </p>
+        </header>
+
+        <form class="donate-form" id="donateForm" method="post" action="{% url 'donate' %}" novalidate
+              data-selected-cause="{{ selected_cause }}">
+            {% csrf_token %}
+            <input type="hidden" name="amount" id="donationAmount" value="">
+            <fieldset class="donate-form__section">
+                <legend class="donate-form__legend">Donor Information</legend>
+                <div class="donate-form__fields">
+                    <input type="text" id="donorName" name="name" class="donate-form__input"
+                           placeholder="Name" required autocomplete="name">
+                    <input type="email" id="donorEmail" name="email" class="donate-form__input"
+                           placeholder="Email" required autocomplete="email">
+                    <input type="text" id="donorAddress" name="address" class="donate-form__input"
+                           placeholder="Address" required autocomplete="street-address">
+                </div>
+            </fieldset>
+
+            <fieldset class="donate-form__section">
+                <legend class="donate-form__legend">Select Donation Amount</legend>
+                <div class="donate-amounts" id="donateAmounts">
+                    {% for amount in donation_amounts %}
+                    <button type="button" class="donate-amount-btn" data-amount="{{ amount }}">
+                        ₹{{ amount }}
+                    </button>
+                    {% endfor %}
+                    <button type="button" class="donate-amount-btn" data-amount="custom">Custom</button>
+                </div>
+                <div class="donate-custom-amount" id="customAmountWrap" hidden>
+                    <input type="number" id="customAmount" name="custom_amount" class="donate-form__input"
+                           placeholder="Enter custom amount (₹)" min="1" step="1">
+                </div>
+            </fieldset>
+
+            <div class="donate-form__section">
+                <label class="donate-form__label" for="causeSelect">Select a Cause</label>
+                <div class="donate-form__select-wrap">
+                    <select id="causeSelect" name="cause" class="donate-form__select" required>
+                        <option value="" disabled selected>Select a Cause</option>
+                        {% for cause in cause_options %}
+                        <option value="{{ cause.slug }}">{{ cause.title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <div class="donate-form__submit">
+                <button type="submit" class="btn btn--primary donate-form__btn">Donate Securely</button>
+                <p class="donate-form__secure-note">
+                    Your donation is safe with us. We use secure payment processing.
+                </p>
+            </div>
+
+            <div class="donate-form__message" id="donateMessage" role="status" aria-live="polite" hidden></div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/donate.js' %}"></script>
+{% endblock %}

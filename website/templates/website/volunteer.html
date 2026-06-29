@@ -1,0 +1,124 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Become a Volunteer | HopeHands Foundation{% endblock %}
+
+{% block footer_nav %}
+<a href="{% url 'about' %}">About Us</a>
+<a href="{% url 'causes' %}">Our Programs</a>
+<a href="{% url 'volunteer' %}">Volunteer</a>
+<a href="{% url 'donate' %}">Donate</a>
+<a href="{% url 'contact' %}">Contact</a>
+{% endblock %}
+
+{% block content %}
+<section class="volunteer-hero">
+    <div class="volunteer-hero__bg">
+        <img src="{% static 'website/images/volunteer-hero.png' %}" alt="" class="volunteer-hero__illustration img-animated img-animated--hero" aria-hidden="true">
+    </div>
+    <div class="container volunteer-hero__content">
+        <h1 class="volunteer-hero__title">Be the Change. Become a Volunteer.</h1>
+        <p class="volunteer-hero__subtitle">
+            Your time, skills, and compassion can bring real change to those that need support.
+        </p>
+        <a href="#volunteer-form" class="btn btn--primary">Join as a Volunteer</a>
+    </div>
+</section>
+
+<section class="volunteer-intro">
+    <div class="container">
+        <h2 class="volunteer-intro__title">Volunteer Program Introduction</h2>
+        <p class="volunteer-intro__text">
+            At HopeHands Foundation, volunteers are the heart of everything we do. Whether you have
+            time, skills, or simply a kind heart, your contribution can help us reach more lives
+            and create lasting impact.
+        </p>
+        <div class="volunteer-intro__image-wrap">
+            <img src="{% static 'website/images/volunteer-team.png' %}" alt="Volunteers working together" class="volunteer-intro__image img-animated img-animated--fade">
+        </div>
+    </div>
+</section>
+
+<section class="volunteer-ways">
+    <div class="container">
+        <h2 class="volunteer-ways__title">Ways You Can Help</h2>
+        <div class="volunteer-ways__grid">
+            {% for way in ways_to_help %}
+            <article class="help-card help-card--{{ way.color }}">
+                <div class="help-card__icon" aria-hidden="true">
+                    {% if way.icon == 'education' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                    </svg>
+                    {% elif way.icon == 'medical' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                        <path d="M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        <path d="M12 12h.01M12 16h.01"/>
+                    </svg>
+                    {% elif way.icon == 'food' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                        <path d="M18 8h1a4 4 0 010 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+                        <line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+                    </svg>
+                    {% elif way.icon == 'event' %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                        <path d="M3 11l18-5v12L3 13v-2z"/>
+                        <path d="M11 13v8"/>
+                    </svg>
+                    {% else %}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                    </svg>
+                    {% endif %}
+                </div>
+                <h3 class="help-card__title">{{ way.title }}</h3>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="volunteer-form-section" id="volunteer-form">
+    <div class="container volunteer-form-section__container">
+        <h2 class="volunteer-form-section__title">Join Our Volunteer Community</h2>
+        <form class="volunteer-form" id="volunteerForm" novalidate>
+            <input type="text" id="volFullName" name="full_name" class="volunteer-form__input"
+                   placeholder="Full Name" required autocomplete="name">
+            <input type="email" id="volEmail" name="email" class="volunteer-form__input"
+                   placeholder="Email Address" required autocomplete="email">
+            <input type="tel" id="volPhone" name="phone" class="volunteer-form__input"
+                   placeholder="Phone Number" required autocomplete="tel">
+            <div class="volunteer-form__select-wrap">
+                <select id="volInterest" name="interest" class="volunteer-form__select" required>
+                    <option value="" disabled selected>Area of Interest</option>
+                    {% for option in interest_options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="volunteer-form__select-wrap">
+                <select id="volAvailability" name="availability" class="volunteer-form__select" required>
+                    <option value="" disabled selected>Availability</option>
+                    {% for option in availability_options %}
+                    <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit" class="btn btn--primary volunteer-form__btn">Become a Volunteer</button>
+            <p class="volunteer-form__note">
+                We respect your time and privacy. Our team will contact you soon.
+            </p>
+            <div class="volunteer-form__message" id="volunteerMessage" role="status" aria-live="polite" hidden></div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/volunteer.js' %}"></script>
+{% endblock %}

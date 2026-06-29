@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="eduBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#eduBg)"/>
+  <rect x="50" y="35" width="300" height="170" rx="10" fill="#fff" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="70" y="55" width="120" height="8" rx="3" fill="#1e3a8a" opacity="0.3"/>
+  <rect x="70" y="72" width="90" height="6" rx="2" fill="#d1d5db"/>
+  <!-- child left -->
+  <circle cx="130" cy="175" r="30" fill="#fcd9b6"/>
+  <path d="M108 166 Q130 142 152 166" fill="#5c3d2e"/>
+  <ellipse cx="120" cy="178" rx="3" ry="4" fill="#333"/>
+  <ellipse cx="140" cy="178" rx="3" ry="4" fill="#333"/>
+  <rect x="110" y="205" width="40" height="48" rx="8" fill="#3b82f6"/>
+  <!-- child right -->
+  <circle cx="270" cy="175" r="30" fill="#e8b89a"/>
+  <path d="M248 166 Q270 142 292 166" fill="#2d1810"/>
+  <rect x="250" y="205" width="40" height="48" rx="8" fill="#ef4444"/>
+  <!-- books stack -->
+  <rect x="175" y="215" width="50" height="10" rx="2" fill="#1e3a8a"/>
+  <rect x="180" y="202" width="42" height="10" rx="2" fill="#4da6a9"/>
+  <rect x="185" y="189" width="34" height="10" rx="2" fill="#f59e0b"/>
+  <path d="M195 175 L210 160 L225 175 L225 195 L195 195 Z" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+</svg>

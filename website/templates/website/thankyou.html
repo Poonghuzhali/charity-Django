@@ -1,0 +1,85 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Thank You | HopeHands Foundation{% endblock %}
+
+{% block footer_nav %}
+<a href="{% url 'about' %}">About Us</a>
+<a href="{% url 'contact' %}">Contact</a>
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+{% endblock %}
+
+{% block content %}
+<section class="thankyou-page page-top">
+    <div class="thankyou-hero">
+        <img src="{% static 'website/images/thankyou-hero.png' %}" alt="Children smiling in a classroom" class="thankyou-hero__image img-animated img-animated--hero">
+    </div>
+
+    <div class="container">
+        <header class="thankyou-header">
+            <h1 class="thankyou-header__title">Thank You for Making a Difference <span aria-hidden="true">❤️</span></h1>
+            <p class="thankyou-header__subtitle">
+                Your kindness has brought hope, care, and support to those who need it the most.
+            </p>
+        </header>
+
+        <section class="thankyou-impact">
+            <h2 class="thankyou-impact__title">Your Impact</h2>
+            <p class="thankyou-impact__intro">
+                Your generous donation will directly support our mission to provide essential resources
+                and opportunities to underserved communities. It will help us deliver critical services,
+                empower individuals, and foster sustainable change.
+            </p>
+            <div class="thankyou-impact__grid">
+                {% for item in impact_items %}
+                <article class="impact-item-card">
+                    <div class="impact-item-card__image-wrap">
+                        <img src="{% static item.image %}" alt="" class="impact-item-card__image img-animated img-animated--card">
+                    </div>
+                    <h3 class="impact-item-card__title">{{ item.title }}</h3>
+                    <p class="impact-item-card__text">{{ item.description }}</p>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="thankyou-further">
+            <h2 class="thankyou-further__title">Your Support Can Go Even Further</h2>
+            <div class="thankyou-further__actions">
+                <a href="{% url 'donate' %}" class="btn btn--green">Donate Again</a>
+                <button type="button" class="btn btn--secondary" id="shareCauseBtn">Share This Cause</button>
+            </div>
+            <p class="thankyou-further__text">
+                Consider making a recurring donation to ensure continuous support for our programs.
+                Share our cause with your friends and family to help us reach more people.
+            </p>
+        </section>
+
+        <section class="thankyou-connect">
+            <h2 class="thankyou-connect__title">Stay Connected</h2>
+            <form class="thankyou-subscribe" id="subscribeForm" novalidate>
+                <div class="thankyou-subscribe__wrap">
+                    <input type="email" id="subscribeEmail" class="thankyou-subscribe__input"
+                           placeholder="Receive email updates" required autocomplete="email">
+                    <button type="submit" class="thankyou-subscribe__btn" aria-label="Subscribe">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="thankyou-subscribe__message" id="subscribeMessage" hidden></p>
+            </form>
+            <a href="{% url 'volunteer' %}" class="btn btn--secondary thankyou-connect__volunteer">Become a Volunteer</a>
+            <p class="thankyou-closing">
+                From all of us at HopeHands Foundation — thank you for believing in humanity.
+            </p>
+        </section>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'website/js/thankyou.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="shelterSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#d1fae5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#shelterSky)"/>
+  <ellipse cx="200" cy="255" rx="150" ry="18" fill="rgba(0,0,0,0.06)"/>
+  <!-- tent -->
+  <polygon points="200,55 70,235 330,235" fill="#d97706" stroke="#b45309" stroke-width="2"/>
+  <polygon points="200,55 200,235 70,235" fill="#f59e0b"/>
+  <line x1="200" y1="55" x2="200" y2="235" stroke="#b45309" stroke-width="1.5" opacity="0.5"/>
+  <rect x="172" y="185" width="56" height="50" rx="5" fill="#78350f"/>
+  <rect x="188" y="195" width="24" height="40" rx="3" fill="#451a03" opacity="0.5"/>
+  <!-- tree -->
+  <rect x="55" y="175" width="10" height="60" fill="#78350f"/>
+  <circle cx="60" cy="155" r="32" fill="#16a34a"/>
+  <circle cx="45" cy="165" r="18" fill="#22c55e" opacity="0.8"/>
+  <!-- crate -->
+  <rect x="290" y="210" width="40" height="30" rx="3" fill="#92400e"/>
+  <line x1="290" y1="220" x2="330" y2="220" stroke="#78350f" stroke-width="1"/>
+</svg>

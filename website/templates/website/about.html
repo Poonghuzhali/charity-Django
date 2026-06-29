@@ -1,0 +1,67 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}About Us | HopeHands Foundation{% endblock %}
+
+{% block content %}
+<section class="about-intro page-top">
+    <div class="container">
+        <h1 class="about-intro__title">About Us</h1>
+        <h2 class="about-intro__subtitle">Our Story</h2>
+        <p class="about-intro__text">
+            HopeHands Foundation was established in 2010 by Sarah Johnson and David Lee,
+            two passionate advocates who witnessed firsthand the struggles faced by underserved
+            communities. What began as a small neighborhood initiative has grown into a global
+            movement dedicated to uplifting lives through education, healthcare, and sustainable
+            development. Our journey is rooted in the belief that every person deserves dignity,
+            opportunity, and hope.
+        </p>
+        <div class="about-intro__illustration-wrap">
+            <img src="{% static 'website/images/about-story.png' %}" alt="Team members collaborating" class="about-intro__illustration img-animated img-animated--fade">
+        </div>
+    </div>
+</section>
+
+<section class="section vision-mission">
+    <div class="container">
+        <h2 class="section__title">Vision &amp; Mission</h2>
+        <p class="vision-mission__text">
+            Our vision is a world free from poverty and injustice, where every individual has
+            access to the resources they need to thrive. Our mission is to empower communities
+            through compassionate action, sustainable programs, and meaningful partnerships.
+            We are committed to transparency, accountability, and the ethical use of every
+            donation to create lasting, positive change.
+        </p>
+    </div>
+</section>
+
+<section class="section values">
+    <div class="container">
+        <h2 class="section__title">Our Values</h2>
+        <div class="values__grid">
+            {% for value in values %}
+            <article class="value-card">
+                <img src="{% static value.icon %}" alt="" class="value-card__icon" width="40" height="40">
+                <h3 class="value-card__title">{{ value.title }}</h3>
+                <p class="value-card__text">{{ value.description }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section team" id="team">
+    <div class="container">
+        <h2 class="section__title">Our Team</h2>
+        <div class="team__grid">
+            {% for member in team_members %}
+            <article class="team-card">
+                <img src="{% static member.avatar %}" alt="{{ member.name }}" class="team-card__avatar img-animated img-animated--avatar">
+                <h3 class="team-card__name">{{ member.name }}</h3>
+                <p class="team-card__role">{{ member.role }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

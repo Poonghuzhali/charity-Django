@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="sarahBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#sarahBg)"/>
+  <circle cx="100" cy="88" r="44" fill="#e8b89a"/>
+  <path d="M62 74 Q100 38 138 74 Q134 112 100 106 Q66 112 62 74" fill="#5c3d2e"/>
+  <ellipse cx="84" cy="92" rx="4" ry="5" fill="#2d1810"/>
+  <ellipse cx="116" cy="92" rx="4" ry="5" fill="#2d1810"/>
+  <path d="M88 106 Q100 114 112 106" stroke="#c68642" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M72 132 Q100 118 128 132 L124 178 Q100 186 76 178 Z" fill="#6d28d9"/>
+  <path d="M78 138 L122 138" stroke="#7c3aed" stroke-width="2" opacity="0.5"/>
+</svg>
