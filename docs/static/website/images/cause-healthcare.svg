@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="hcBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#hcBg)"/>
+  <!-- nurse background -->
+  <circle cx="310" cy="95" r="28" fill="#fcd9b6"/>
+  <rect x="288" y="123" width="44" height="58" rx="6" fill="#fff"/>
+  <rect x="288" y="123" width="44" height="14" rx="4" fill="#7dd3fc"/>
+  <circle cx="75" cy="155" r="26" fill="#e8b89a"/>
+  <rect x="55" y="181" width="40" height="50" rx="6" fill="#f59e0b"/>
+  <!-- doctor foreground -->
+  <circle cx="200" cy="105" r="40" fill="#d4a574"/>
+  <path d="M166 92 Q200 52 234 92 Q230 128 200 122 Q170 128 166 92" fill="#3d2314"/>
+  <rect x="162" y="145" width="76" height="85" rx="10" fill="#ffffff"/>
+  <rect x="162" y="145" width="76" height="24" rx="8" fill="#38bdf8"/>
+  <rect x="178" y="118" width="44" height="22" rx="8" fill="#93c5fd" opacity="0.85"/>
+  <!-- child patient -->
+  <circle cx="200" cy="195" r="34" fill="#fcd9b6"/>
+  <path d="M174 186 Q200 160 226 186" fill="#5c3d2e"/>
+  <rect x="178" y="229" width="44" height="48" rx="8" fill="#3b82f6"/>
+  <path d="M212 165 Q228 185 215 205" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <circle cx="213" cy="208" r="6" fill="none" stroke="#475569" stroke-width="2"/>
+</svg>

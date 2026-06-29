@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" fill="none">
+  <defs>
+    <linearGradient id="storyBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#ede4d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="380" rx="12" fill="url(#storyBg)"/>
+  <ellipse cx="90" cy="55" rx="45" ry="28" fill="#d4e8d4" opacity="0.55" transform="rotate(-18 90 55)"/>
+  <ellipse cx="820" cy="70" rx="55" ry="32" fill="#c8e6c9" opacity="0.45" transform="rotate(12 820 70)"/>
+  <text x="450" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#9ca3af" opacity="0.45">working together</text>
+  <text x="450" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#9ca3af" opacity="0.35">for change</text>
+  <!-- Woman yellow shirt -->
+  <g transform="translate(195, 78)">
+    <ellipse cx="82" cy="255" rx="50" ry="10" fill="rgba(0,0,0,0.07)"/>
+    <rect x="58" y="172" width="48" height="72" rx="10" fill="#f59e0b"/>
+    <rect x="65" y="244" width="15" height="48" rx="5" fill="#374151"/>
+    <rect x="84" y="244" width="15" height="48" rx="5" fill="#374151"/>
+    <circle cx="82" cy="122" r="38" fill="#e8b89a"/>
+    <path d="M50 110 Q82 72 114 110 Q110 148 82 142 Q54 148 50 110" fill="#3d2314"/>
+    <ellipse cx="70" cy="126" rx="4" ry="5" fill="#2d1810"/>
+    <ellipse cx="94" cy="126" rx="4" ry="5" fill="#2d1810"/>
+    <path d="M74 140 Q82 148 90 140" stroke="#c68642" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <rect x="108" y="158" width="38" height="52" rx="5" fill="#fff" stroke="#d1d5db" stroke-width="2"/>
+    <rect x="122" y="153" width="12" height="9" rx="2" fill="#9ca3af"/>
+    <line x1="115" y1="178" x2="139" y2="178" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="115" y1="190" x2="133" y2="190" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="115" y1="202" x2="136" y2="202" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="28" y="178" width="20" height="55" rx="8" fill="#e8b89a" transform="rotate(20 38 178)"/>
+  </g>
+  <!-- Man green jacket -->
+  <g transform="translate(525, 72)">
+    <ellipse cx="82" cy="260" rx="50" ry="10" fill="rgba(0,0,0,0.07)"/>
+    <rect x="54" y="178" width="56" height="74" rx="10" fill="#16a34a"/>
+    <rect x="54" y="178" width="56" height="18" rx="6" fill="#15803d"/>
+    <rect x="62" y="252" width="17" height="50" rx="5" fill="#1f2937"/>
+    <rect x="85" y="252" width="17" height="50" rx="5" fill="#1f2937"/>
+    <circle cx="82" cy="118" r="40" fill="#d4a574"/>
+    <path d="M46 104 Q82 62 118 104 Q114 144 82 138 Q50 144 46 104" fill="#2d1810"/>
+    <ellipse cx="68" cy="122" rx="4" ry="5" fill="#2d1810"/>
+    <ellipse cx="96" cy="122" rx="4" ry="5" fill="#2d1810"/>
+    <rect x="8" y="162" width="38" height="52" rx="5" fill="#fff" stroke="#d1d5db" stroke-width="2"/>
+    <rect x="22" y="157" width="12" height="9" rx="2" fill="#9ca3af"/>
+    <line x1="15" y1="182" x2="39" y2="182" stroke="#e5e7eb" stroke-width="2"/>
+    <line x1="15" y1="194" x2="33" y2="194" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="110" y="182" width="22" height="58" rx="8" fill="#d4a574" transform="rotate(-14 121 182)"/>
+  </g>
+</svg>

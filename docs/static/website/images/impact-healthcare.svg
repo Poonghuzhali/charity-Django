@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="impHealth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#impHealth)"/>
+  <!-- hospital bed -->
+  <rect x="195" y="175" width="130" height="65" rx="8" fill="#e5e7eb"/>
+  <rect x="195" y="168" width="130" height="18" rx="6" fill="#fff"/>
+  <rect x="195" y="240" width="12" height="35" fill="#9ca3af"/>
+  <rect x="313" y="240" width="12" height="35" fill="#9ca3af"/>
+  <!-- patient -->
+  <circle cx="255" cy="158" r="26" fill="#fcd9b6"/>
+  <path d="M235 150 Q255 132 275 150" fill="#5c3d2e"/>
+  <rect x="240" y="182" width="30" height="22" rx="5" fill="#93c5fd"/>
+  <!-- doctor -->
+  <circle cx="130" cy="125" r="34" fill="#d4a574"/>
+  <path d="M102 113 Q130 85 158 113" fill="#3d2314"/>
+  <rect x="105" y="159" width="50" height="72" rx="8" fill="#ffffff"/>
+  <rect x="105" y="159" width="50" height="20" rx="6" fill="#bae6fd"/>
+  <path d="M148 175 Q158 198 145 215" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <circle cx="143" cy="218" r="6" fill="none" stroke="#475569" stroke-width="2"/>
+  <rect x="118" y="178" width="14" height="5" rx="1" fill="#ef4444"/>
+  <rect x="123" y="173" width="5" height="14" rx="1" fill="#ef4444"/>
+  <!-- heart monitor line -->
+  <path d="M310 100 L325 100 L330 85 L340 115 L350 95 L365 100 L380 100" stroke="#4da6a9" stroke-width="2" fill="none"/>
+</svg>

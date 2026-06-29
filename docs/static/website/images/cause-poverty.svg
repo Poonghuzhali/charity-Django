@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="prSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#bbf7d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#prSky)"/>
+  <rect y="220" width="400" height="80" fill="#86efac" opacity="0.5"/>
+  <!-- volunteer left -->
+  <circle cx="95" cy="145" r="30" fill="#d4a574"/>
+  <rect x="88" y="128" width="26" height="12" rx="4" fill="#93c5fd"/>
+  <rect x="73" y="175" width="44" height="58" rx="8" fill="#1e3a8a"/>
+  <rect x="83" y="168" width="24" height="8" rx="2" fill="#fff" opacity="0.7"/>
+  <!-- volunteer right -->
+  <circle cx="305" cy="150" r="30" fill="#e8b89a"/>
+  <rect x="298" y="133" width="26" height="12" rx="4" fill="#93c5fd"/>
+  <rect x="283" y="180" width="44" height="58" rx="8" fill="#16a34a"/>
+  <!-- recipient -->
+  <circle cx="200" cy="155" r="32" fill="#fcd9b6"/>
+  <rect x="193" y="138" width="26" height="12" rx="4" fill="#93c5fd"/>
+  <rect x="178" y="187" width="44" height="58" rx="8" fill="#7c3aed"/>
+  <!-- supply bag -->
+  <rect x="155" y="210" width="55" height="45" rx="8" fill="#fff" stroke="#d1d5db" stroke-width="2"/>
+  <path d="M168 210 Q182.5 192 197 210" stroke="#d1d5db" stroke-width="2" fill="none"/>
+  <rect x="165" y="225" width="35" height="4" rx="1" fill="#4da6a9"/>
+  <rect x="165" y="235" width="28" height="4" rx="1" fill="#4da6a9"/>
+  <rect x="165" y="245" width="32" height="4" rx="1" fill="#4da6a9"/>
+  <!-- hands passing -->
+  <ellipse cx="175" cy="218" rx="12" ry="8" fill="#d4a574" transform="rotate(-20 175 218)"/>
+  <ellipse cx="225" cy="218" rx="12" ry="8" fill="#fcd9b6" transform="rotate(20 225 218)"/>
+</svg>

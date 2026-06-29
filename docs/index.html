@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeHands Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/charity-Django/static/website/css/style.css">
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="/charity-Django/" class="logo">
+                <img src="/charity-Django/static/website/images/logo.svg" alt="" class="logo__icon" width="32" height="32">
+                <span class="logo__text">HopeHands Foundation</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li>
+                        <a href="/charity-Django/"
+                           class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/charity-Django/about/"
+                           class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/charity-Django/causes/"
+                           class="nav__link">Causes</a>
+                    </li>
+                    <li>
+                        <a href="/charity-Django/donate/"
+                           class="nav__link">Donate</a>
+                    </li>
+                    <li>
+                        <a href="/charity-Django/contact/"
+                           class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <a href="/charity-Django/donate/" class="btn btn--primary btn--sm nav__cta">Donate Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+<section class="hero" id="home">
+    <div class="hero__bg">
+        <img src="/charity-Django/static/website/images/hero-illustration.png" alt="" class="hero__illustration img-animated img-animated--hero" aria-hidden="true">
+    </div>
+    <div class="container hero__content">
+        <h1 class="hero__title">Together, We Can Change Lives</h1>
+        <p class="hero__subtitle">
+            Your kindness today can bring hope, health, and happiness to someone in need.
+        </p>
+        <div class="hero__actions">
+            <a href="/charity-Django/donate/" class="btn btn--primary">Donate Now</a>
+            <a href="/charity-Django/volunteer/" class="btn btn--outline-light">Become a Volunteer</a>
+        </div>
+    </div>
+</section>
+
+<section class="section mission" id="mission">
+    <div class="container">
+        <h2 class="section__title">Our Mission</h2>
+        <p class="mission__text">
+            At HopeHands Foundation, our mission is to empower communities and transform lives
+            through compassionate action and sustainable solutions. We are dedicated to providing
+            essential resources, fostering education, and promoting well-being for those facing
+            adversity. Together, we strive to build a brighter future, one hand at a time.
+        </p>
+    </div>
+</section>
+
+<section class="section causes" id="causes">
+    <div class="container">
+        <h2 class="section__title">Our Causes</h2>
+        <div class="causes__grid">
+            
+            <article class="cause-card">
+                <div class="cause-card__image-wrap">
+                    <img src="/charity-Django/static/website/images/cause-education.png" alt="Education for Children" class="cause-card__image img-animated img-animated--card">
+                </div>
+                <div class="cause-card__body">
+                    <h3 class="cause-card__title">Education for Children</h3>
+                    <p class="cause-card__text">We provide access to quality education, school supplies, and learning opportunities for underprivileged children.</p>
+                </div>
+            </article>
+            
+            <article class="cause-card">
+                <div class="cause-card__image-wrap">
+                    <img src="/charity-Django/static/website/images/cause-medical.png" alt="Medical Support" class="cause-card__image img-animated img-animated--card">
+                </div>
+                <div class="cause-card__body">
+                    <h3 class="cause-card__title">Medical Support</h3>
+                    <p class="cause-card__text">Our medical programs deliver essential healthcare, medicines, and wellness support to communities in need.</p>
+                </div>
+            </article>
+            
+            <article class="cause-card">
+                <div class="cause-card__image-wrap">
+                    <img src="/charity-Django/static/website/images/cause-shelter.png" alt="Food &amp; Shelter" class="cause-card__image img-animated img-animated--card">
+                </div>
+                <div class="cause-card__body">
+                    <h3 class="cause-card__title">Food &amp; Shelter</h3>
+                    <p class="cause-card__text">We ensure families have nutritious meals and safe shelter during times of hardship and displacement.</p>
+                </div>
+            </article>
+            
+            <article class="cause-card">
+                <div class="cause-card__image-wrap">
+                    <img src="/charity-Django/static/website/images/cause-disaster.png" alt="Disaster Relief" class="cause-card__image img-animated img-animated--card">
+                </div>
+                <div class="cause-card__body">
+                    <h3 class="cause-card__title">Disaster Relief</h3>
+                    <p class="cause-card__text">When disaster strikes, we respond quickly with emergency aid, supplies, and long-term recovery assistance.</p>
+                </div>
+            </article>
+            
+        </div>
+        <div class="causes__actions">
+            <a href="/charity-Django/donate/" class="btn btn--primary">Donate</a>
+            <a href="/charity-Django/about/" class="btn btn--secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section class="section impact" id="impact">
+    <div class="container">
+        <h2 class="section__title">Impact Section</h2>
+        <div class="impact__grid">
+            
+            <div class="impact-card">
+                <span class="impact-card__label">Lives Helped</span>
+                <span class="impact-card__value" data-target="10,000+">10,000+</span>
+            </div>
+            
+            <div class="impact-card">
+                <span class="impact-card__label">Volunteers</span>
+                <span class="impact-card__value" data-target="500+">500+</span>
+            </div>
+            
+            <div class="impact-card">
+                <span class="impact-card__label">Projects Completed</span>
+                <span class="impact-card__value" data-target="120+">120+</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section__title">Stories / Testimonials</h2>
+        <div class="testimonials__grid">
+            
+            <article class="testimonial-card" data-testimonial-id="1">
+                <div class="testimonial-card__header">
+                    <img src="/charity-Django/static/website/images/avatar-1.png" alt="Sophia Carter" class="testimonial-card__avatar img-animated img-animated--avatar">
+                    <div>
+                        <h3 class="testimonial-card__name">Sophia Carter</h3>
+                        <time class="testimonial-card__date" datetime="2023-08-15">2023-08-15</time>
+                    </div>
+                </div>
+                <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                </div>
+                <p class="testimonial-card__text">HopeHands Foundation changed my life. Their support helped my family through the toughest times. I am forever grateful for their kindness and dedication.</p>
+                <div class="testimonial-card__reactions">
+                    <button type="button" class="reaction-btn reaction-btn--like" data-action="like" aria-label="Like">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/>
+                        </svg>
+                        <span class="reaction-count">24</span>
+                    </button>
+                    <button type="button" class="reaction-btn reaction-btn--dislike" data-action="dislike" aria-label="Dislike">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3zM17 2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3"/>
+                        </svg>
+                        <span class="reaction-count">2</span>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="testimonial-card" data-testimonial-id="2">
+                <div class="testimonial-card__header">
+                    <img src="/charity-Django/static/website/images/avatar-2.png" alt="Ethan Bennett" class="testimonial-card__avatar img-animated img-animated--avatar">
+                    <div>
+                        <h3 class="testimonial-card__name">Ethan Bennett</h3>
+                        <time class="testimonial-card__date" datetime="2023-07-22">2023-07-22</time>
+                    </div>
+                </div>
+                <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                </div>
+                <p class="testimonial-card__text">Volunteering with HopeHands has been incredibly rewarding. Seeing the direct impact of our work in local communities reminds me why giving back matters so much.</p>
+                <div class="testimonial-card__reactions">
+                    <button type="button" class="reaction-btn reaction-btn--like" data-action="like" aria-label="Like">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/>
+                        </svg>
+                        <span class="reaction-count">18</span>
+                    </button>
+                    <button type="button" class="reaction-btn reaction-btn--dislike" data-action="dislike" aria-label="Dislike">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3zM17 2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3"/>
+                        </svg>
+                        <span class="reaction-count">1</span>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="testimonial-card" data-testimonial-id="3">
+                <div class="testimonial-card__header">
+                    <img src="/charity-Django/static/website/images/avatar-3.png" alt="Olivia Hayes" class="testimonial-card__avatar img-animated img-animated--avatar">
+                    <div>
+                        <h3 class="testimonial-card__name">Olivia Hayes</h3>
+                        <time class="testimonial-card__date" datetime="2023-09-03">2023-09-03</time>
+                    </div>
+                </div>
+                <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                    <svg class="star" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    
+                </div>
+                <p class="testimonial-card__text">The medical support program provided my village with essential care we could never have afforded. HopeHands truly lives up to its name.</p>
+                <div class="testimonial-card__reactions">
+                    <button type="button" class="reaction-btn reaction-btn--like" data-action="like" aria-label="Like">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/>
+                        </svg>
+                        <span class="reaction-count">31</span>
+                    </button>
+                    <button type="button" class="reaction-btn reaction-btn--dislike" data-action="dislike" aria-label="Dislike">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                            <path d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3zM17 2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3"/>
+                        </svg>
+                        <span class="reaction-count">0</span>
+                    </button>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                
+                <a href="/charity-Django/">Home</a>
+                <a href="/charity-Django/causes/">Causes</a>
+                <a href="/charity-Django/about/">About Us</a>
+                <a href="/charity-Django/contact/">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                
+            </nav>
+            <div class="footer__social">
+                <a href="#" aria-label="Twitter" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" aria-label="Facebook" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+            <p class="footer__copyright">&copy; 2024 HopeHands Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/charity-Django/static/website/js/main.js"></script>
+    
+</body>
+</html>

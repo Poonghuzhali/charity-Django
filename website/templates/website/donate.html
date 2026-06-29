@@ -21,8 +21,9 @@
             </p>
         </header>
 
-        <form class="donate-form" id="donateForm" method="post" action="{% url 'donate' %}" novalidate
-              data-selected-cause="{{ selected_cause }}">
+        <form class="donate-form" id="donateForm" novalidate
+              data-selected-cause="{{ selected_cause }}"
+              data-thank-you-url="{% url 'thank_you' %}">
             {% csrf_token %}
             <input type="hidden" name="amount" id="donationAmount" value="">
             <fieldset class="donate-form__section">
